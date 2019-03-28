@@ -1,0 +1,20 @@
+# dpys
+version: '3'
+
+services:
+  python:
+    build: ./python
+    container_name: python
+    hostname: python
+    volumes:
+      - ./items:/www
+    tty: true
+    networks:
+      - dpys
+
+
+networks:
+  dpys:
+    driver: bridge
+
+  
