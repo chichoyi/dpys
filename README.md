@@ -66,6 +66,9 @@ services:
     # 关闭 dnmp 服务
     docker-compose down
     
+    # 生成框架
+    docker exec -w /www python scrapy startproject CrawlImages
+    
  ## contact me
  
  email: chichoyi@163.com
